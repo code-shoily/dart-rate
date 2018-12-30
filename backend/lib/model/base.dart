@@ -25,10 +25,3 @@ class Base {
   @Column(indexed: true)
   DateTime updatedAt;
 }
-
-class Rateable extends Base {
-  String title;
-
-  @Column(nullable: true)
-  String description;
-}

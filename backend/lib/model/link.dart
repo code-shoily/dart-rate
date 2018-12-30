@@ -8,7 +8,12 @@ import "user.dart";
 
 class Link extends ManagedBase<_Link> implements _Link {}
 
-class _Link extends Rateable {
+class _Link extends Base {
+  String title;
+
+  @Column(nullable: true)
+  String description;
+
   @Relate(#links, isRequired: true, onDelete: DeleteRule.cascade)
   User owner;
 
