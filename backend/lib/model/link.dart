@@ -4,6 +4,7 @@ import "activity.dart";
 import "award.dart";
 import "base.dart";
 import "comment.dart";
+import "follow.dart";
 import "link_tag.dart";
 import "rating.dart";
 import "user.dart";
@@ -22,8 +23,9 @@ class _Link extends Base {
   String link;
 
   ManagedSet<Activity> activities;
+  ManagedSet<Award> awards;
+  ManagedSet<Follow> followers;
   ManagedSet<LinkTag> linkTags;
   ManagedSet<Rating> ratings;
   ManagedSet<Comment> comments;
-  ManagedSet<Award> awards;
 }

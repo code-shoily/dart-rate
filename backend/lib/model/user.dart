@@ -4,6 +4,7 @@ import "activity.dart";
 import "award.dart";
 import "comment.dart";
 import "common.dart";
+import "follow.dart";
 import "link.dart";
 
 class User extends ManagedObject<_User>
@@ -28,6 +29,8 @@ class _User extends ResourceOwnerTableDefinition {
 
   ManagedSet<Activity> activities;
   ManagedSet<Award> awards;
+  ManagedSet<Follow> follows;
+  ManagedSet<Follow> followers;
   ManagedSet<Link> links;
   ManagedSet<Comment> comments;
 }
