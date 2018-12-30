@@ -8,4 +8,6 @@ A rating application written in fullstack Dart
 
 * `mobile/` will contain [Flutter](//flutter.io) code for mobile (iOS and Android)
 
+* `shared/` will contain Dart code common for all stacks.
+
 Each directory will have its documentation in `README.md`.
