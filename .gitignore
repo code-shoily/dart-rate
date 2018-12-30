@@ -12,3 +12,5 @@ Dart_Packages.xml
 .DS_Store
 .idea/
 *.aqueduct.pid
+.dart_tool/
+doc/api/
