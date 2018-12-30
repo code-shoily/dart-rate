@@ -1,5 +1,6 @@
 import "package:aqueduct/aqueduct.dart";
 
+import "activity.dart";
 import "award.dart";
 import "base.dart";
 
@@ -10,5 +11,6 @@ class _Badge extends Base {
   String icon;
   int value;
 
+  ManagedSet<Activity> activities;
   ManagedSet<Award> awards;
 }

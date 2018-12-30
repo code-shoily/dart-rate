@@ -1,5 +1,6 @@
 import "package:aqueduct/aqueduct.dart";
 
+import "activity.dart";
 import "award.dart";
 import "base.dart";
 import "comment.dart";
@@ -20,6 +21,7 @@ class _Link extends Base {
 
   String link;
 
+  ManagedSet<Activity> activities;
   ManagedSet<LinkTag> linkTags;
   ManagedSet<Rating> ratings;
   ManagedSet<Comment> comments;

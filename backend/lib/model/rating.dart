@@ -1,5 +1,6 @@
 import "package:aqueduct/aqueduct.dart";
 
+import "activity.dart";
 import "base.dart";
 import "comment.dart";
 import "link.dart";
@@ -17,4 +18,6 @@ class _Rating extends Base {
 
   @Relate(#ratings, onDelete: DeleteRule.cascade)
   Comment comment;
+
+  ManagedSet<Activity> activities;
 }

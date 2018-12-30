@@ -1,5 +1,6 @@
 import 'package:backend/backend.dart';
 
+import "activity.dart";
 import "award.dart";
 import "comment.dart";
 import "common.dart";
@@ -25,6 +26,7 @@ class _User extends ResourceOwnerTableDefinition {
   @Relate(#users)
   Country country;
 
+  ManagedSet<Activity> activities;
   ManagedSet<Award> awards;
   ManagedSet<Link> links;
   ManagedSet<Comment> comments;
