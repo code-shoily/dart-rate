@@ -22,6 +22,9 @@ class _Link extends Base {
 
   String link;
 
+  @Column(defaultValue: "false")
+  bool isNSFW;
+
   ManagedSet<Activity> activities;
   ManagedSet<Award> awards;
   ManagedSet<Follow> followers;

@@ -19,6 +19,7 @@ class _Activity extends Base {
   @Relate(#activities)
   Badge associatedBadge;
 
+  @Column(defaultValue: "0")
   int points;
 
   @Column(nullable: true)
